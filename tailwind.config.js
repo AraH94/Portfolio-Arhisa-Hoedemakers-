@@ -21,7 +21,8 @@ module.exports = {
 		},
 		extend: {
 			backgroundImage: {
-				about: "url('./images/Ara1.jpg')",
+				about: "url(../images/Ara1.jpg)"
+				// about: "url('./images/Ara1.jpg')",
 			}
 		},
 	},

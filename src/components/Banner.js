@@ -11,7 +11,9 @@ import { fadeIn } from '../variants';
 
 import Image from '../images/Ara.jpg';
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+
+import { Link } from "react-scroll";
 
 function Banner() {
 	return (
@@ -19,7 +21,7 @@ function Banner() {
 			<div className="container mx-auto">
 				<div className="flex gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'">
 					<div className='bg-banner flex flex-col items-center lg:gap-x-12'></div>
-					<div className='flex-1 text-left font-secondary lg:text'>
+					<div className='flex-1 text-center font-secondary lg:text-left'>
 						<motion.h1
 							variants={fadeIn('up', 0.3)}
 							initial="hidden"
@@ -53,14 +55,14 @@ function Banner() {
 							initial="hidden"
 							whileInView={'show'}
 							viewport={{ once: false, amount: 0.7 }}
-							className='mb-8 max-w-lg mx-auto lg:mx-0'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio itaque est totam impedit dolorem velit unde dolorum veniam cupiditate
+							className='mb-6 max-w-lg mx-auto lg:mx-0'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio itaque est totam impedit dolorem velit unde dolorum veniam cupiditate
 						</motion.p>
 						<motion.div
 							variants={fadeIn('up', 0.6)}
 							initial="hidden"
 							whileInView={'show'}
 							viewport={{ once: false, amount: 0.7 }}
-							className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+							className='flex max-w-max gap-x-6 items-center mb-6 mx-auto lg:mx-0'>
 							<a href="#">
 								<button className='btn btn-lg'>Contact me</button>
 							</a>
@@ -90,7 +92,8 @@ function Banner() {
 						<div className="content">
 							<img src={Image} alt="" />
 							<h2 className="pb-3">HII THERE! 🙋<br />Want to work together? </h2>
-							<Link to='home'>Hire me</Link>
+						<a href="./components/About">Hire me</a>
+						{/* <Link to='about'>Hire me</Link> */}
 						</div>
 					</motion.div>
 				</div>
