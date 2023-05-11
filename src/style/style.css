@@ -25,21 +25,116 @@
 	background-position: right;
 }
 
-.logo {
-	width: 15%;
-}
-
 .box {
-	background: url(../images/Ara.jpg);
-	background-size: cover;
+	position: relative;
+	width: 400px;
+	height: 400px;
+	background: rgba(176, 153, 205, 0.5);
+	border-radius: 50%;
+	overflow: hidden;
+	margin-top: -80px;
+	/* background: url(../images/Ara.jpg); */
+	/* background-size: cover;
 	background-position: center center;
-	height: 250px;
-	width: 250px;
+	margin-bottom: 40px;
+	height: 450px;
+	width: 350px;
 	box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
 	animation: animate 5s ease-in-out infinite;
 	transition: all 1s ease-in-out;
+	align-items: center;  */
+}
+
+.box::before {
+	content: '';
+	position: absolute;
+	inset: -20px 80px;
+	background: linear-gradient(315deg, #8475A9, #D7ADBF);
+	transition: 0.5s;
+	animation: animate 4s linear infinite;
+}
+
+.box:hover .content img {
+	opacity: 0;
+}
+
+.box:hover::before {
+	inset: -20px 0px;
+}
+
+.box::after {
+	content: '';
+	position: absolute;
+	inset: 6px;
+	background: #e2acc7;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.content {
+	position: absolute;
+	inset: 6px;
+	/* border: 6px solid #D7ADBF; */
+	z-index: 3;
+	border-radius: 50%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
 	align-items: center;
-	
+	flex-direction: column;
+}
+
+.content img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.5s;
+	pointer-events: 0;
+	z-index: 3;
+}
+
+.content h2 {
+	position: relative;
+	font-size: 20px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.content a {
+	position: relative;
+	margin-top: 10px;
+	padding: 10px 20px;
+	background: white;
+	color: rgb(0, 0, 0);
+	border-radius: 25px;
+	font-weight: 500;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.content a:hover {
+	letter-spacing: 0.2rem;
+}
+
+.gradient,
+.active {
+	background: linear-gradient(92.23deg,
+			#8475A9 21.43%,
+			#D7ADBF 50.63%,
+			#8475A9 100%);
+}
+
+.active {
+	color: #fff;
+	padding: 1rem;
+	border-radius: 100%;
 }
 
 @layer base {
@@ -62,6 +157,15 @@
 
 @keyframes animate {
 	0% {
+		tranform: rotate(0deg)
+	}
+
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+/* 0% {
 		border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
 	}
 
@@ -72,4 +176,4 @@
 	100% {
 		border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
 	}
-}
+} */
