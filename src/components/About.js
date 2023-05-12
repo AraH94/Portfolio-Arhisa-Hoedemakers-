@@ -39,7 +39,7 @@ function About() {
 					className='flex-1'>
 						<h2 className='h2 text-accent'>About me.</h2>
 						<h3 className='h3 mb-4'>
-							I'm a Front-end Developer with 2 years of experience.
+							I'm a Front-end Developer with 1 year of experience.
 						</h3>
 						<p className='mb-6'>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, amet dolorum error repudiandae molestias accusamus quo culpa necessitatibus nesciunt eos, sed cum nemo debitis quae unde explicabo? Est, enim ex!

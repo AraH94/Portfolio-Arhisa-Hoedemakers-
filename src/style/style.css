@@ -19,11 +19,31 @@
 	background-position: left;
 	transition: 0.2s background-position ease-in-out;
 	box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+	border-radius: 50em;
+	border: 3px solid transparent;
+	border-color: #8475A9;
 }
 
 .btn:hover {
 	background-position: right;
 }
+
+/* .btn {
+	background-size: 200%;
+	transition: 0.2s background-position ease-in-out;
+	box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+	background: linear-gradient(92.23deg,
+			#8475A9,
+			#D7ADBF,
+			#8475A9) padding-box,
+		linear-gradient(to right, #78e4ff, #ff48fa) border-box;
+	border-radius: 50em;
+	border: 4px solid transparent;
+}
+
+.btn:hover {
+	background-position: right;
+} */
 
 .box {
 	position: relative;
@@ -49,7 +69,7 @@
 	content: '';
 	position: absolute;
 	inset: -20px 80px;
-	background: linear-gradient(315deg, #8475A9, #D7ADBF);
+	background: linear-gradient(315deg, hwb(257 46% 34%), #D7ADBF);
 	transition: 0.5s;
 	animation: animate 4s linear infinite;
 }
@@ -66,7 +86,8 @@
 	content: '';
 	position: absolute;
 	inset: 6px;
-	background: #e2acc7;
+	background: rgb(203, 17, 120);
+	background: radial-gradient(circle, rgba(203, 17, 120, 1) 0%, rgba(89, 39, 99, 1) 100%);
 	border-radius: 50%;
 	z-index: 1;
 }
@@ -117,6 +138,8 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: 0.5s;
+	border: 4px solid transparent;
+	border-color: #8475A9;
 }
 
 .content a:hover {
@@ -140,7 +163,8 @@
 @layer base {
 	.h2 {
 		@apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
-	  }
+	}
+
 	.btn {
 		@apply rounded-full font-primary text-white font-medium;
 	}

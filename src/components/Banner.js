@@ -11,13 +11,14 @@ import { fadeIn } from '../variants';
 
 import Image from '../images/Ara.jpg';
 
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
+
 
 function Banner() {
 	return (
-		<section className='min-h-[60vh] lg:min-h-[70vh] flex items-center' id='home'>
+		<section className='min-h-[60vh] lg:min-h-[80vh] flex items-center' id='home'>
 			<div className="container mx-auto">
 				<div className="flex gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'">
 					<div className='bg-banner flex flex-col items-center lg:gap-x-12'></div>
@@ -62,10 +63,11 @@ function Banner() {
 							initial="hidden"
 							whileInView={'show'}
 							viewport={{ once: false, amount: 0.7 }}
-							className='flex max-w-max gap-x-6 items-center mb-6 mx-auto lg:mx-0'>
+							className='btnborder flex max-w-max gap-x-6 items-center mb-6 mx-auto lg:mx-0'>
 							<a href="#">
 								<button className='btn btn-lg'>Contact me</button>
 							</a>
+
 						</motion.div>
 						<motion.div
 							variants={fadeIn('up', 0.7)}
@@ -92,8 +94,10 @@ function Banner() {
 						<div className="content">
 							<img src={Image} alt="" />
 							<h2 className="pb-3">HII THERE! 🙋<br />Want to work together? </h2>
-						<a href="./components/About">Hire me</a>
-						{/* <Link to='about'>Hire me</Link> */}
+							<a href="./components/About">Hire me</a>
+							{/* <Link to='about'>Hire me</Link> */}
+							{/* <Link to={"/About"}>Web design</Link> */}
+
 						</div>
 					</motion.div>
 				</div>
