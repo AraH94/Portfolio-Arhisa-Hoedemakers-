@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Banner from "./components/Banner";
 import About from "./components/About";
 import Nav from "./components/Nav";
+import Contact from "./components/Contact";
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 			<Banner />
 			<Nav />
 			<About />
+			<Contact />
 		</div>
 	);
 };

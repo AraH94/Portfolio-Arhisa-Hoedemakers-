@@ -11,9 +11,9 @@ import { fadeIn } from '../variants';
 
 import Image from '../images/Ara.jpg';
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-// import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 
 
 function Banner() {
@@ -90,13 +90,11 @@ function Banner() {
 						variants={fadeIn('down', 0.5)}
 						initial="hidden"
 						whileInView={'show'}
-						className="hidden lg:flex flex-1 max-w-[400px] lg:max-w-[400px] justify-center items-center relative box">
-						<div className="content">
+						className="hidden lg:flex flex-1 max-w-[400px] lg:max-w-[400px] justify-center items-center relative box ">
+						<div className="content pointer-events-none">
 							<img src={Image} alt="" />
 							<h2 className="pb-3">HII THERE! 🙋<br />Want to work together? </h2>
-							<a href="./components/About">Hire me</a>
-							{/* <Link to='about'>Hire me</Link> */}
-							{/* <Link to={"/About"}>Web design</Link> */}
+							<Link to='about' activeClass='active' className='pointer-events-auto cursor-pointer'>Hire me</Link>
 
 						</div>
 					</motion.div>

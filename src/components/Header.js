@@ -1,9 +1,11 @@
 import React from 'react';
 import Logo from '../images/logo.png';
-import '../style/style.css'
-
+import '../style/style.css';
+import CV from '../images/CVAra.pdf';
 
 function Header() {
+	const fileName = "CVAra.pdf"
+
 	return (
 		<header className="py-8">
 			<div className="container mx-auto">
@@ -11,9 +13,13 @@ function Header() {
 					<a href="#">
 						<img className='w-32' src={Logo} alt="" />
 					</a>
-					<button className="btn btn-sm">
-						My Resume
-					</button>
+
+					{/* Resume */}
+					<a href={CV} download={fileName}>
+						<button className="btn btn-sm">
+							My Resume
+						</button>
+					</a>
 				</div>
 			</div>
 		</header>

@@ -54,15 +54,14 @@
 	overflow: hidden;
 	margin-top: -80px;
 	/* background: url(../images/Ara.jpg); */
-	/* background-size: cover;
+	background-size: cover;
 	background-position: center center;
 	margin-bottom: 40px;
 	height: 450px;
 	width: 350px;
 	box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
-	animation: animate 5s ease-in-out infinite;
-	transition: all 1s ease-in-out;
-	align-items: center;  */
+	animation: cubic-bezier() 5s ease-in-out infinite;
+	align-items: center;
 }
 
 .box::before {
@@ -160,6 +159,7 @@
 	border-radius: 100%;
 }
 
+
 @layer base {
 	.h2 {
 		@apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
@@ -184,15 +184,15 @@
 
 @keyframes animate {
 	0% {
-		tranform: rotate(0deg)
+		transform: rotate(0deg)
 	}
 
 	100% {
 		transform: rotate(360deg)
 	}
-}
 
-/* 0% {
+
+	 0% {
 		border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
 	}
 
@@ -203,4 +203,4 @@
 	100% {
 		border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
 	}
-} */
+}
