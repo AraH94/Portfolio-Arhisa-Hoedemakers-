@@ -159,7 +159,6 @@
 	border-radius: 100%;
 }
 
-
 @layer base {
 	.h2 {
 		@apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;

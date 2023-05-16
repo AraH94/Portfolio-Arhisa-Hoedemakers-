@@ -11,8 +11,6 @@ import { fadeIn } from '../variants';
 
 import Image from '../images/Ara.jpg';
 
-// import { Link } from "react-router-dom";
-
 import { Link } from "react-scroll";
 
 
@@ -59,17 +57,6 @@ function Banner() {
 							className='mb-6 max-w-lg mx-auto lg:mx-0'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio itaque est totam impedit dolorem velit unde dolorum veniam cupiditate
 						</motion.p>
 						<motion.div
-							variants={fadeIn('up', 0.6)}
-							initial="hidden"
-							whileInView={'show'}
-							viewport={{ once: false, amount: 0.7 }}
-							className='btnborder flex max-w-max gap-x-6 items-center mb-6 mx-auto lg:mx-0'>
-							<a href="#">
-								<button className='btn btn-lg'>Contact me</button>
-							</a>
-
-						</motion.div>
-						<motion.div
 							variants={fadeIn('up', 0.7)}
 							initial="hidden"
 							whileInView={'show'}
@@ -94,8 +81,7 @@ function Banner() {
 						<div className="content pointer-events-none">
 							<img src={Image} alt="" />
 							<h2 className="pb-3">HII THERE! 🙋<br />Want to work together? </h2>
-							<Link to='about' activeClass='active' className='pointer-events-auto cursor-pointer'>Hire me</Link>
-
+							<Link to='contact' activeClass='active' className='pointer-events-auto cursor-pointer'>Hire me</Link>
 						</div>
 					</motion.div>
 				</div>

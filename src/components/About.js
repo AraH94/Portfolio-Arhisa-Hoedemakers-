@@ -31,12 +31,12 @@ function About() {
 					>
 					</motion.div>
 					{/* text */}
-					<motion.div 
-					variants={fadeIn('left', 0.5)}
-					initial='hidden'
-					whileInView={'show'}
-					viewport={{ once: false, amount: 0.3 }}					
-					className='flex-1'>
+					<motion.div
+						variants={fadeIn('left', 0.5)}
+						initial='hidden'
+						whileInView={'show'}
+						viewport={{ once: false, amount: 0.3 }}
+						className='flex-1'>
 						<h2 className='h2 text-accent'>About me.</h2>
 						<h3 className='h3 mb-4'>
 							I'm a Front-end Developer with 1 year of experience.
@@ -77,8 +77,9 @@ function About() {
 							</div>
 						</div>
 						<div className='flex gap-x-8 items-center'>
-							<button className='btn btn-lg'>Contact me</button>
-							<a href="#" className='text-gradient btn-link'>My Portfolio</a>
+							<a href="#" className='text-gradient btn-link'>
+								<button className='btn btn-lg'>My portfolio</button>
+							</a>
 						</div>
 					</motion.div>
 				</div>
