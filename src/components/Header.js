@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from '../images/logo.png';
-import '../style/style.css';
 import CV from '../images/CVAra.pdf';
 
 function Header() {

@@ -20,7 +20,7 @@ function Nav() {
 						<BiUser />
 					</Link>
 
-					<Link to='projects' activeClass='active' smooth={true} spy={true} offset={-100} className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+					<Link to='works' activeClass='active' smooth={true} spy={true} offset={-100} className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
 						<AiOutlineProject />
 					</Link>
 

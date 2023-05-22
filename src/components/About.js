@@ -78,7 +78,7 @@ function About() {
 						</div>
 						<div className='flex gap-x-8 items-center'>
 							<a href="#" className='text-gradient btn-link'>
-								<button className='btn btn-lg'>My portfolio</button>
+								<button className='btn btn-lg'>My works</button>
 							</a>
 						</div>
 					</motion.div>
