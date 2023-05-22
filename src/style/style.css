@@ -159,44 +159,6 @@
 	border-radius: 100%;
 }
 
-.card {
-	border-radius: 1rem;
-	cursor: pointer;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: rgb(116, 92, 116);
-	font-size: 1.2rem;
-	padding: 5rem;
-	box-shadow: 0.7rem 0.7rem 0.5rem rgb(181, 154, 185);
-	border: 4px solid grey;
-	gap: 2rem;
-}
-
-.card.active p {
-	display: block;
-}
-
-.card.active {
-	grid-column: 1 / span 6;
-	grid-row: 1;
-	order: 0;
-	height: auto;
-}
-
-.card.is-inactive {
-	grid-column: span 2;
-}
-
-.cardsSec {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-gap: 3rem;
-	width: 100%;
-	padding: 10vw
-  }
-
 @layer base {
 	.h2 {
 		@apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
@@ -216,6 +178,10 @@
 
 	.btn-link {
 		@apply text-base;
+	}
+
+	.text-gradient{
+		@apply bg-gradient-to-r text-transparent bg-clip-text from-[#8475A9] to-[#D7ADBF] font-bold font-primary hover:from-[#D7ADBF] hover:to-[#42A6E3];
 	}
 }
 

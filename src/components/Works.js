@@ -1,15 +1,14 @@
 import React, { useRef } from "react";
 import WorkCards from "./WorkCards";
-import worksData from "./worksData.json";
+import worksData from "./worksData";
 
 function Works() {
 	// const cardsRef = useRef([])
 	return (
 		<section id="works" >
 			<div className="container mx-auto">
-				<h2 className='h2 text-accent'>Works</h2>
-
-				<div className="cardsSec">
+			<h2 className='h2 text-accent'>Works</h2>
+				<div>
 					{worksData.map((card, index) => (
 						<WorkCards
 							key={index}
