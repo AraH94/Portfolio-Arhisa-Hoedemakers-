@@ -8,7 +8,7 @@ function Works() {
 		<section id="works" >
 			<div className="container mx-auto">
 			<h2 className='h2 text-accent'>Works</h2>
-				<div>
+				<div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-4 md:grid-cols-2">
 					{worksData.map((card, index) => (
 						<WorkCards
 							key={index}

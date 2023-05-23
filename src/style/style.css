@@ -159,6 +159,10 @@
 	border-radius: 100%;
 }
 
+.info{
+	background: radial-gradient(circle, #cb1178 0%, #592763 100%);
+}
+
 @layer base {
 	.h2 {
 		@apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;

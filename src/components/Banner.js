@@ -1,6 +1,4 @@
 import React from "react";
-// icons
-import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 // type animation
 import { TypeAnimation } from 'react-type-animation';
@@ -16,7 +14,7 @@ import { Link } from "react-scroll";
 
 function Banner() {
 	return (
-		<section className='min-h-[60vh] lg:min-h-[80vh] flex items-center' id='home'>
+		<section className='min-h-[60vh] lg:min-h-[600px] flex items-center' id='home'>
 			<div className="container mx-auto">
 				<div className="flex gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'">
 					<div className='bg-banner flex flex-col items-center lg:gap-x-12'></div>
@@ -56,22 +54,6 @@ function Banner() {
 							viewport={{ once: false, amount: 0.7 }}
 							className='mb-6 max-w-lg mx-auto lg:mx-0'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio itaque est totam impedit dolorem velit unde dolorum veniam cupiditate
 						</motion.p>
-						<motion.div
-							variants={fadeIn('up', 0.7)}
-							initial="hidden"
-							whileInView={'show'}
-							viewport={{ once: false, amount: 0.7 }}
-							className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-							<a href="#">
-								<FaFacebook />
-							</a>
-							<a href="#">
-								<FaLinkedin />
-							</a>
-							<a href="#">
-								<FaGithub />
-							</a>
-						</motion.div>
 					</div>
 					<motion.div
 						variants={fadeIn('down', 0.5)}

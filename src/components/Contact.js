@@ -13,9 +13,7 @@ import { fadeIn } from '../variants';
 import Swal from "sweetalert2";
 
 // icons
-import { FiMail } from 'react-icons/fi';
-import { BsPhone } from 'react-icons/bs';
-import { GoLocation } from 'react-icons/go';
+import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 
 function Contact() {
@@ -44,50 +42,7 @@ function Contact() {
 		<section className='py-16 lg:section' id='contact'>
 			<div className="container mx-auto">
 				<h2 className='h2'>Contact me</h2>
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-32">
-
-					{/* Info */}
-					<motion.div
-						variants={fadeIn('right', 0.3)}
-						initial='hidden'
-						whileInView={'show'}
-						viewport={{ once: false, amount: 0.3 }}
-						className='col-span-1 border rounded-2xl border-white flex-col gap-y-6 pb-24 p-6 '>
-
-						<div className="email pb-6 ">
-							<div className='grid grid-cols-12 lg:grid-cols-2 w-[80px] items-center '>
-								<FiMail />
-								<a href="mailto:arahoedemakers@gmail.com" >
-									<h4>Email:</h4>
-									<p>arahoedemakers@gmail.com</p>
-								</a>
-							</div>
-						</div>
-
-						<div className="phone pb-6">
-							<div className='grid grid-cols-2 lg:grid-cols-2 w-[80px] items-center'>
-								<BsPhone />
-								<a href="tel:+32471081257">
-									<h4>Call:</h4>
-									<p>+32471081257 </p>
-								</a>
-							</div>
-
-						</div>
-
-						<div className="location ">
-							<div className='grid grid-cols-2 lg:grid-cols-2 w-[80px] items-center'>
-								<GoLocation />
-								<div>
-									<h4>Location:</h4>
-									<p>3680 Maaseik, Limburg, Belgium</p>
-								</div>
-							</div>
-							<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=3680%20Maaseik+(My%20place)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure distance on map</a></iframe>
-
-						</div>
-					</motion.div>
-
+				<div className="grid grid-cols-1 lg:grid-cols-3 gap-x-14">
 
 					{/* Form */}
 					<motion.form
@@ -95,16 +50,66 @@ function Contact() {
 						initial='hidden'
 						whileInView={'show'}
 						viewport={{ once: false, amount: 0.3 }}
-						className='border rounded-2xl border-white gap-y-6 pb-24 p-6 items-center'
+						className='lg:row-span-2 lg:col-span-2'
 						ref={form} onSubmit={sendEmail}>
-						<input className='bg-transparent border-b border-fuchsia-950 py-3 outline-none w-full placeholder:text-fuchsia-950 focus:border-pink-300 transition-all' name="from_name" type="text" placeholder='Your name' />
-						<input className='bg-transparent border-b border-fuchsia-950 py-3 outline-none w-full placeholder:text-fuchsia-950 focus:border-pink-300  transition-all' name="from_email" type="text" placeholder='Your email' />
-						<textarea className='bg-transparent h-72 border-b border-fuchsia-950 py-12 outline-none w-full placeholder:text-fuchsia-950 focus:border-pink-300 transition-all resize-none mb-12' name="message" placeholder='Your message'></textarea>
-						<button className='btn btn-lg'>Send message</button>
+						<input className='bg-white border rounded p-3 border-white py-3 mb-3 outline-none w-full placeholder:text-[#cb1178]  focus:border-[#8475A9] transition-all' name="from_name" type="text" placeholder='Your name' />
+						<input className='bg-white border rounded p-3 border-white py-3 mb-3 outline-none w-full placeholder:text-[#cb1178]  focus:border-[#8475A9] transition-all' name="from_email" type="text" placeholder='Your email' />
+						<textarea className='bg-white border rounded p-3 h-64 border-white outline-none w-full placeholder:text-[#cb1178] focus:border-[#8475A9] transition-all resize-none mb-2' name="message" placeholder='Your message'></textarea>
+						<button className='btn btn-sm mb-5 ml-44 lg:m-0 md:ml-[300px]'>Send message</button>
 					</motion.form>
+
+					{/* Info */}
+					<motion.div
+						variants={fadeIn('right', 0.3)}
+						initial='hidden'
+						whileInView={'show'}
+						viewport={{ once: false, amount: 0.3 }}
+						className='p-6 text-center info text-white border rounded'>
+
+						<div className="email pb-6 ">
+							<a href="mailto:arahoedemakers@gmail.com" >
+								<h4 className='font-bold'>Email:</h4>
+								<p>arahoedemakers@gmail.com</p>
+							</a>
+						</div>
+
+						<div className="phone pb-6">
+							<a href="tel:+32471081257">
+								<h4 className='font-bold'>Call:</h4>
+								<p>+32 471 08 12 57 </p>
+							</a>
+						</div>
+
+						<div className="location ">
+							<div>
+								<h4 className='font-bold'>Location:</h4>
+								<p>3680 Maaseik, Limburg, Belgium</p>
+							</div>
+						</div>
+
+						<motion.div
+							variants={fadeIn('up', 0.7)}
+							initial="hidden"
+							whileInView={'show'}
+							viewport={{ once: false, amount: 0.7 }}
+							className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 mt-5 lg:pl-24'>
+							<a href="https://www.facebook.com/ara.hoedemakers/" target='_blank'>
+								<FaFacebook />
+							</a>
+							<a href="https://www.linkedin.com/in/arhisa-hoedemakers-839423226/" target='_blank'>
+								<FaLinkedin />
+							</a>
+							<a href="https://github.com/AraH94" target='_blank'>
+								<FaGithub />
+							</a>
+						</motion.div>
+
+					</motion.div>
+
+
 				</div>
 			</div>
-
+			<iframe className='mt-8' width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=3680%20Maaseik+(My%20place)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure distance on map</a></iframe>
 		</section>
 
 	)
