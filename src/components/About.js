@@ -39,7 +39,7 @@ function About() {
 						whileInView={'show'}
 						viewport={{ once: false, amount: 0.3 }}
 						className='flex-1'>
-						<h2 className='h2 text-accent'>About me.</h2>
+						<h2 className='h2 text-accent'>About me</h2>
 						<h3 className='h3 mb-4'>
 							I'm a Front-end Developer with 1 year of experience.
 						</h3>

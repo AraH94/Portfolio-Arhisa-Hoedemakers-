@@ -86,7 +86,7 @@
 	position: absolute;
 	inset: 6px;
 	background: rgb(203, 17, 120);
-	background: radial-gradient(circle, rgba(203, 17, 120, 1) 0%, rgba(89, 39, 99, 1) 100%);
+	background: radial-gradient(circle, #cb1077 0%, rgb(89, 39, 98) 100%);
 	border-radius: 50%;
 	z-index: 1;
 }
@@ -160,7 +160,11 @@
 }
 
 .info{
-	background: radial-gradient(circle, #cb1178 0%, #592763 100%);
+	/* background: radial-gradient(circle, #cb1178 0%, #592763 100%); */
+	background-image: url("/src/images/retro.jpg");
+	background-repeat: no-repeat;
+	background-size: 370px 310px;
+
 }
 
 @layer base {

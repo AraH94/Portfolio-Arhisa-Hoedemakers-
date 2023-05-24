@@ -12,28 +12,32 @@ import Image from '../images/Ara.jpg';
 import { Link } from "react-scroll";
 
 
+
 function Banner() {
 	return (
 		<section className='min-h-[60vh] lg:min-h-[600px] flex items-center' id='home'>
 			<div className="container mx-auto">
 				<div className="flex gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'">
 					<div className='bg-banner flex flex-col items-center lg:gap-x-12'></div>
-					<div className='flex-1 text-center font-secondary lg:text-left'>
+					<div className='flex-1 text-center lg:text-left'>
 						<motion.h1
 							variants={fadeIn('up', 0.3)}
 							initial="hidden"
 							whileInView={'show'}
 							viewport={{ once: false, amount: 0.7 }}
-							className='text-[55px] font-bold leading-[0.8] lg:text-[80px]'>
-							ARHISA <br />
-							<span>HOEDEMAKERS</span>
+							className='text-[55px] font-bold font-silkscreen leading-[70px] lg:text-[30px] text-[#592762]'>
+							My name is <br />
+							<span className="text-[#cb1077] lg:text-[65px] font-primary">ARHiSA HOEDEMAKERS  <br /></span>
+							<span className="text-center" >a.k.a</span> <br/>
+							<span className="text-[#cb1077] lg:text-[60px] font-primary">Ara</span>
 						</motion.h1>
+
 						<motion.div
 							variants={fadeIn('up', 0.4)}
 							initial="hidden"
 							whileInView={'show'}
 							viewport={{ once: false, amount: 0.7 }}
-							className='mb-6 text-[36px] lg:text-[45px] font-secondary font-semibold uppercase leading-[1]'>
+							className='mb-6 text-[36px] lg:text-[45px] font-semibold uppercase leading-[1] font-silkscreen mt-4'>
 							<span className='text-white mr-4'>I am a</span>
 							<TypeAnimation
 								sequence={[
@@ -47,19 +51,20 @@ function Banner() {
 								repeat={Infinity}
 							/>
 						</motion.div>
+
 						<motion.p
 							variants={fadeIn('up', 0.5)}
 							initial="hidden"
 							whileInView={'show'}
 							viewport={{ once: false, amount: 0.7 }}
-							className='mb-6 max-w-lg mx-auto lg:mx-0'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio itaque est totam impedit dolorem velit unde dolorum veniam cupiditate
-						</motion.p>
+							className='mb-6 max-w-lg mx-auto lg:mx-0' ></motion.p>
 					</div>
+
 					<motion.div
 						variants={fadeIn('down', 0.5)}
 						initial="hidden"
 						whileInView={'show'}
-						className="hidden lg:flex flex-1 max-w-[400px] lg:max-h-[400px] justify-center items-center relative box ">
+						className="hidden lg:flex flex-1 max-w-[400px] lg:max-h-[400px] justify-center items-center relative box">
 						<div className="content pointer-events-none">
 							<img src={Image} alt="" />
 							<h2 className="pb-3">HII THERE! 🙋<br />Want to work together? </h2>

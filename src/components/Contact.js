@@ -15,6 +15,9 @@ import Swal from "sweetalert2";
 // icons
 import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 
+// image
+// import Retro from '../images/retrocomputer.png';
+
 
 function Contact() {
 	const form = useRef();
@@ -50,11 +53,11 @@ function Contact() {
 						initial='hidden'
 						whileInView={'show'}
 						viewport={{ once: false, amount: 0.3 }}
-						className='lg:row-span-2 lg:col-span-2'
+						className='lg:col-span-2'
 						ref={form} onSubmit={sendEmail}>
-						<input className='bg-white border rounded p-3 border-white py-3 mb-3 outline-none w-full placeholder:text-[#cb1178]  focus:border-[#8475A9] transition-all' name="from_name" type="text" placeholder='Your name' />
-						<input className='bg-white border rounded p-3 border-white py-3 mb-3 outline-none w-full placeholder:text-[#cb1178]  focus:border-[#8475A9] transition-all' name="from_email" type="text" placeholder='Your email' />
-						<textarea className='bg-white border rounded p-3 h-64 border-white outline-none w-full placeholder:text-[#cb1178] focus:border-[#8475A9] transition-all resize-none mb-2' name="message" placeholder='Your message'></textarea>
+						<input className='bg-white border rounded p-3 border-white py-3 mb-3 outline-none w-full placeholder:text-[#cb1178] transition-all focus:shadow-md focus:shadow-[#592763]' name="from_name" type="text" placeholder='Your name' />
+						<input className='bg-white border rounded p-3 border-white py-3 mb-3 outline-none w-full placeholder:text-[#cb1178] transition-all focus:shadow-md focus:shadow-[#592763]' name="from_email" type="text" placeholder='Your email' />
+						<textarea className='bg-white border rounded p-3 h-72 border-white outline-none w-full placeholder:text-[#cb1178] transition-all resize-none mb-2 focus:shadow-md focus:shadow-[#592763]' name="message" placeholder='Your message'></textarea>
 						<button className='btn btn-sm mb-5 ml-44 lg:m-0 md:ml-[300px]'>Send message</button>
 					</motion.form>
 
@@ -64,23 +67,23 @@ function Contact() {
 						initial='hidden'
 						whileInView={'show'}
 						viewport={{ once: false, amount: 0.3 }}
-						className='p-6 text-center info text-white border rounded'>
+						className='p-6 text-center info text-white border rounded mt-12'>
 
-						<div className="email pb-6 ">
-							<a href="mailto:arahoedemakers@gmail.com" >
-								<h4 className='font-bold'>Email:</h4>
-								<p>arahoedemakers@gmail.com</p>
-							</a>
-						</div>
-
-						<div className="phone pb-6">
+						<div className="phone mt-6 mb-4">
 							<a href="tel:+32471081257">
 								<h4 className='font-bold'>Call:</h4>
 								<p>+32 471 08 12 57 </p>
 							</a>
 						</div>
 
-						<div className="location ">
+						<div className="email mb-5">
+							<a href="mailto:arahoedemakers@gmail.com" >
+								<h4 className='font-bold'>Email:</h4>
+								<p>arahoedemakers@gmail.com</p>
+							</a>
+						</div>
+
+						<div className="location" >
 							<div>
 								<h4 className='font-bold'>Location:</h4>
 								<p>3680 Maaseik, Limburg, Belgium</p>
@@ -92,7 +95,7 @@ function Contact() {
 							initial="hidden"
 							whileInView={'show'}
 							viewport={{ once: false, amount: 0.7 }}
-							className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 mt-5 lg:pl-24'>
+							className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 mt- lg:pl-24 mt-[56px]'>
 							<a href="https://www.facebook.com/ara.hoedemakers/" target='_blank'>
 								<FaFacebook />
 							</a>

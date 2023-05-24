@@ -7,6 +7,7 @@ module.exports = {
 			secondary: 'Rajdhani',
 			tertiary: 'Aldrich',
 			space: 'Space Mono, monospace',
+			silkscreen: 'Silkscreen, cursive',
 		},
 		container: {
 			padding: {

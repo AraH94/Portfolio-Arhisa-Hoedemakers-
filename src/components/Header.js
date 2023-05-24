@@ -7,20 +7,19 @@ function Header() {
 
 	return (
 		<header className="py-8">
-			<div className="container mx-auto">
 				<div className="flex justify-between items-center">
 					<a href="#">
-						<img className='w-32' src={Logo} alt="" />
+						<img className='w-32 ml-5' src={Logo} alt="" />
 					</a>
 
 					{/* Resume */}
 					<a href={CV} download={fileName}>
-						<button className="btn btn-sm">
+						<button className="btn btn-sm mr-5">
 							My Resume
 						</button>
 					</a>
 				</div>
-			</div>
+			
 		</header>
 	);
 };
