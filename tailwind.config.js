@@ -23,7 +23,6 @@ module.exports = {
 		extend: {
 			backgroundImage: {
 				about: "url(../images/Ara1.png)"
-				// about: "url('./images/Ara1.jpg')",	
 			},
 			opacity: {
 				'50': '0.5'
