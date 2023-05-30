@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+section {
+	height: 100vh;
+	width: 100vw;
+	scroll-snap-align: start;
+	position: relative;
+  }
+	  
 .bg-port {
 	background-color: #d9e4f5;
 	background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
@@ -64,6 +77,7 @@
 	animation: animate 5s ease-in-out infinite;
 	align-items: center;
 	transition: all 1s ease-in-out;
+	margin-top: 50px;
 }
 
 .box::before {
@@ -89,7 +103,8 @@
 	inset: 6px;
 	background: rgb(203, 17, 120);
 	background: radial-gradient(circle, #cb1077 0%, rgb(89, 39, 98) 100%);
-	border-radius: 50%;
+	/* border-radius: 50%; */
+	scale: 105%;
 	z-index: 1;
 }
 
@@ -98,8 +113,9 @@
 	inset: 6px;
 	/* border: 6px solid #D7ADBF; */
 	z-index: 3;
-	border-radius: 50%;
+	/* border-radius: 50%; */
 	overflow: hidden;
+	scale: 105%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -227,3 +243,19 @@
     font-family: 'Blanka';
     src: url("../style/BLANKA/Blanka-Regular.otf") format("opentype")
 }
+
+@media only screen and (max-width: 768px) {
+	#works {
+	  height: auto;
+	  margin-bottom: 50px;
+	}
+
+	#about{
+		margin-bottom: 100px;	
+	}
+}
+	@media only screen and (max-width: 640px) {
+		.info{
+			background-size: 400px 200px;
+		}
+	}

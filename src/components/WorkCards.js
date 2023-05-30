@@ -6,7 +6,6 @@ function WorkCards({ title, image, content, url }) {
 	}
 
 	return (
-		<section>
 			<div>
 				<div className='cursor-pointer'>
 					{/* image */}
@@ -26,9 +25,6 @@ function WorkCards({ title, image, content, url }) {
 					</div>
 				</div>
 			</div>
-		</section>
-
-	)
-}
+	)}
 
 export default WorkCards;

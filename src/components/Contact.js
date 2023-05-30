@@ -42,7 +42,7 @@ function Contact() {
 	};
 
 	return (
-		<section className='py-16 lg:section' id='contact'>
+		<section id='contact'>
 			<div className="container mx-auto">
 				<h2 className='h2'>Contact me</h2>
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-x-14">
@@ -67,7 +67,7 @@ function Contact() {
 						initial='hidden'
 						whileInView={'show'}
 						viewport={{ once: false, amount: 0.3 }}
-						className='p-6 text-center info text-white border rounded mt-12'>
+						className='p-6 text-center lg:info info text-white border rounded mt-12'>
 
 						<div className="phone mt-6 mb-4">
 							<a href="tel:+32471081257">
@@ -108,8 +108,6 @@ function Contact() {
 						</motion.div>
 
 					</motion.div>
-
-
 				</div>
 			</div>
 			<iframe className='mt-8' width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=3680%20Maaseik+(My%20place)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure distance on map</a></iframe>

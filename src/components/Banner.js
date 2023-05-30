@@ -15,7 +15,7 @@ import { Link } from "react-scroll";
 
 function Banner() {
 	return (
-		<section className='min-h-[60vh] lg:min-h-[600px] flex items-center' id='home'>
+		<section className='flex items-center' id='home'>
 			<div className="container mx-auto">
 				<div className="flex gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'">
 					<div className='bg-banner flex flex-col items-center lg:gap-x-12'></div>
@@ -26,10 +26,9 @@ function Banner() {
 							whileInView={'show'}
 							viewport={{ once: false, amount: 0.7 }}
 							className='text-[55px] font-silkscreen lg:text-[25px] text-[#592762] '>
-							My name is <br/>
-							<span className="text-[#cb1077] lg:text-[65px] name font-Blanka">ARHISA HOEDEMAKERS  <br /></span>
-							<span className="text-center">a.k.a</span> <br/>
-							<span className="text-[#cb1077] lg:text-[60px] name font-Blanka">Ara</span>
+							<span className="text-[#cb1077] lg:text-[65px] name font-Blanka text-[55px] leading-4">ARHISA HOEDEMAKERS</span> <br />
+							<span className="text-center font-tertiary text-[30px]">a.k.a</span> <br/>
+							<span className="text-[#cb1077] lg:text-[60px] name font-Blanka text-[55px]">Ara</span>
 						</motion.h1>
 
 						<motion.div
@@ -37,7 +36,7 @@ function Banner() {
 							initial="hidden"
 							whileInView={'show'}
 							viewport={{ once: false, amount: 0.7 }}
-							className='mb-6 text-[36px] lg:text-[45px] uppercase leading-[1] font-silkscreen mt-4'>
+							className='mb-6 text-[36px] lg:text-[45px] uppercase leading-[1] font-tertiary mt-4'>
 							<span className='text-white mr-4'>I am a</span>
 							<TypeAnimation
 								sequence={[
@@ -61,10 +60,10 @@ function Banner() {
 					</div>
 
 					<motion.div
-						variants={fadeIn('down', 0.5)}
+						variants={fadeIn('down', 0.2)}
 						initial="hidden"
 						whileInView={'show'}
-						className="hidden lg:flex flex-1 max-w-[400px] lg:max-h-[400px] justify-center items-center relative box">
+						className="hidden lg:flex flex-1 max-w-[400px] lg:max-h-[420px] justify-center items-center relative box mt-[50px]">
 						<div className="content pointer-events-none">
 							<img src={Image} alt="" />
 							<h2 className="pb-3">HII THERE! 🙋<br />Want to work together? </h2>
