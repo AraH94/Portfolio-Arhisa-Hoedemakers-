@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../images/logo.png';
 import CV from '../images/CVAra.pdf';
+import { Link } from "react-scroll";
 
 function Header() {
 	const fileName = "CVAra.pdf"
@@ -8,9 +9,9 @@ function Header() {
 	return (
 		<header className="py-8">
 				<div className="flex justify-between items-center">
-					<a href="#">
+					<Link to='home' className='cursor-pointer'>
 						<img className='w-32 ml-5' src={Logo} alt="" />
-					</a>
+						</Link>
 
 					{/* Resume */}
 					<a href={CV} download={fileName}>
