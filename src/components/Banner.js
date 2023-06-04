@@ -26,9 +26,9 @@ function Banner() {
 							whileInView={'show'}
 							viewport={{ once: false, amount: 0.7 }}
 							className='text-[55px] font-silkscreen lg:text-[25px] text-[#592762] '>
-							<span className="text-[#cb1077] lg:text-[65px] name font-Blanka text-[55px] leading-4">ARHISA HOEDEMAKERS</span> <br />
+							<span className="text-[#cb1077] lg:text-[65px] name text-[55px] leading-4">ARHISA HOEDEMAKERS</span> <br />
 							<span className="text-center font-tertiary text-[30px]">a.k.a</span> <br/>
-							<span className="text-[#cb1077] lg:text-[60px] name font-Blanka text-[55px]">Ara</span>
+							<span className="text-[#cb1077] lg:text-[60px] name text-[55px]">Ara</span>
 						</motion.h1>
 
 						<motion.div
@@ -36,7 +36,7 @@ function Banner() {
 							initial="hidden"
 							whileInView={'show'}
 							viewport={{ once: false, amount: 0.7 }}
-							className='mb-6 text-[36px] lg:text-[45px] uppercase leading-[1] font-tertiary mt-4'>
+							className='mb-6 text-[36px] lg:text-[45px] font-tertiary uppercase leading-[1] mt-4'>
 							<span className='text-white mr-4'>I am a</span>
 							<TypeAnimation
 								sequence={[

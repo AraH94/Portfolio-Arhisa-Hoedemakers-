@@ -40,10 +40,12 @@ function About() {
 						className='flex-1 mt-20'>
 						<h2 className='h2 text-accent'>About me</h2>
 						<h3 className='h3 mb-4'>
-							I'm a Front-end Developer with 1 year of experience.
+							I'm a beginning Front-end Developer.
 						</h3>
 						<p className='mb-6'>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, amet dolorum error repudiandae molestias accusamus quo culpa necessitatibus nesciunt eos, sed cum nemo debitis quae unde explicabo? Est, enim ex!
+							In 2021 I started with the course Programming. I wanted to specialise myself more in the front-end and started in November 2022 with the course Front-end Developer at Intec Brussels. <br/>
+							I'm eager to expand my knowledge and realise more projects to develop myself even more into a coder. <br/>
+							If I could combine my love for travelling and creating websites for a living, that would surely be a big plus.
 						</p>
 						{/* stats */}
 						<div className='flex gap-x-6 lg:gap-x-10 mb-12'>
