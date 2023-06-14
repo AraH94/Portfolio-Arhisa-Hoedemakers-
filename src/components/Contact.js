@@ -55,9 +55,9 @@ function Contact() {
 						viewport={{ once: false, amount: 0.3 }}
 						className='lg:col-span-2'
 						ref={form} onSubmit={sendEmail}>
-						<input className='bg-white border rounded p-3 border-white py-3 mb-3 outline-none w-full placeholder:text-[#cb1178] transition-all focus:shadow-md focus:shadow-[#592763]' name="from_name" type="text" placeholder='Your name' />
-						<input className='bg-white border rounded p-3 border-white py-3 mb-3 outline-none w-full placeholder:text-[#cb1178] transition-all focus:shadow-md focus:shadow-[#592763]' name="from_email" type="text" placeholder='Your email' />
-						<textarea className='bg-white border rounded p-3 h-72 border-white outline-none w-full placeholder:text-[#cb1178] transition-all resize-none mb-2 focus:shadow-md focus:shadow-[#592763]' name="message" placeholder='Your message'></textarea>
+						<input className='bg-white border rounded p-3 border-white py-3 mb-3 outline-none w-full placeholder:text-[#cb1178] transition-all focus:shadow-md focus:shadow-[#592763]' name="from_name" type="text" placeholder='Your name' required />
+						<input className='bg-white border rounded p-3 border-white py-3 mb-3 outline-none w-full placeholder:text-[#cb1178] transition-all focus:shadow-md focus:shadow-[#592763]' name="from_email" type="text" placeholder='Your email' required/>
+						<textarea className='bg-white border rounded p-3 h-72 border-white outline-none w-full placeholder:text-[#cb1178] transition-all resize-none mb-2 focus:shadow-md focus:shadow-[#592763]' name="message" placeholder='Your message' required></textarea>
 						<button className='btn btn-sm mb-5 ml-44 lg:m-0 md:ml-[300px]'>Send message</button>
 					</motion.form>
 

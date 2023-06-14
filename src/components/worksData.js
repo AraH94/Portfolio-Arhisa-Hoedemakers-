@@ -1,4 +1,5 @@
 import Amazon from "../images/amazonclone.png";
+import Iterna from "../images/IternaWebshop.png";
 
 const images =
 	[
@@ -9,34 +10,34 @@ const images =
 			url: "https://amazonclonetest.netlify.app/"
 		},
 		{
-			title: "Music",
+			title: "Amazon clone",
 			content: "Amazon demo",
 			image: Amazon,
 			url: "https://amazonclonetest.netlify.app/"
 		},
 		{
-			title: "Movies",
+			title: "Amazon clone",
 			content: "Amazon demo",
 			image: Amazon,
 			url: "https://amazonclonetest.netlify.app/"
 		},
 		{
-			title: "Animals",
-			content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio itaque est totam impedit dolorem velit unde dolorum veniam cupiditate",
-			image: Amazon,
-			url: "https://amazonclonetest.netlify.app/"
+			title: "Iterna",
+			content: "Jewelry Webshop",
+			image: Iterna,
+			url: "https://iternewebshophtmlcss.netlify.app/"
 		},
 		{
-			title: "Animals",
-			content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio itaque est totam impedit dolorem velit unde dolorum veniam cupiditate",
-			image: Amazon,
-			url: "https://amazonclonetest.netlify.app/"
+			title: "Iterna",
+			content: "Jewelry Webshop",
+			image: Iterna,
+			url: "https://iternewebshophtmlcss.netlify.app/"
 		},
 		{
-			title: "Animals",
-			content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio itaque est totam impedit dolorem velit unde dolorum veniam cupiditate",
-			image: Amazon,
-			url: "https://amazonclonetest.netlify.app/"
+			title: "Iterna",
+			content: "Jewelry Webshop",
+			image: Iterna,
+			url: "https://iternewebshophtmlcss.netlify.app/"
 		}
 	];
 

@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.a8ba77f0.css",
-    "main.js": "/static/js/main.d96ed2dc.js",
+    "main.css": "/static/css/main.db592255.css",
+    "main.js": "/static/js/main.3c7a37d8.js",
+    "static/media/amazonclone.png": "/static/media/amazonclone.3bc3e18cfa28544d268a.png",
     "static/media/Ara.jpg": "/static/media/Ara.dca0a68c52e13ab60123.jpg",
     "static/media/Ara1.png": "/static/media/Ara1.73149e741cf4141ad1a8.png",
-    "static/media/CVAra.pdf": "/static/media/CVAra.2520148fc3d1ad9c25cf.pdf",
+    "static/media/IternaWebshop.png": "/static/media/IternaWebshop.76d4ff544e0347e75657.png",
+    "static/media/CVAra.pdf": "/static/media/CVAra.ad4962a4521a0617cbfb.pdf",
     "static/media/logo.png": "/static/media/logo.6e557d5064f23d42e6d3.png",
+    "static/media/retro.jpg": "/static/media/retro.a995f337c3b82c5a8c24.jpg",
+    "static/media/Blanka-Regular.otf": "/static/media/Blanka-Regular.16f6265b20de0db4a921.otf",
     "index.html": "/index.html",
-    "main.a8ba77f0.css.map": "/static/css/main.a8ba77f0.css.map",
-    "main.d96ed2dc.js.map": "/static/js/main.d96ed2dc.js.map"
+    "main.db592255.css.map": "/static/css/main.db592255.css.map",
+    "main.3c7a37d8.js.map": "/static/js/main.3c7a37d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8ba77f0.css",
-    "static/js/main.d96ed2dc.js"
+    "static/css/main.db592255.css",
+    "static/js/main.3c7a37d8.js"
   ]
 }

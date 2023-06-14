@@ -39,15 +39,13 @@ function About() {
 						viewport={{ once: false, amount: 0.3 }}
 						className='flex-1 mt-20'>
 						<h2 className='h2 text-accent'>About me</h2>
-						<h3 className='h3 mb-4'>
-							I'm a beginning Front-end Developer.
-						</h3>
-						<p className='mb-6'>
-							In 2021 I started with the course Programming. I wanted to specialise myself more in the front-end and started in November 2022 with the course Front-end Developer at Intec Brussels. <br/>
-							I'm eager to expand my knowledge and realise more projects to develop myself even more into a coder. <br/>
+						<p className='mb-6 font-titillium leading-8 tracking-wide text-lg'>
+							I'm a beginning Front-end Developer. <br/>
+							In 2021 I started with a Programming course. I wanted to specialise myself more in the front-end and started in November 2022 with the course Front-end Developer at Intec Brussels. <br />
+							I'm eager to expand my knowledge and realise more projects to develop myself even more into a coder. <br />
 							If I could combine my love for travelling and creating websites for a living, that would surely be a big plus.
 						</p>
-						{/* stats */}
+						{/* stats
 						<div className='flex gap-x-6 lg:gap-x-10 mb-12'>
 							<div>
 								<div className='text-[40px] font-tertiary text-gradient mb-2'>
@@ -78,10 +76,10 @@ function About() {
 									Clients
 								</div>
 							</div>
-						</div>
+						</div> */}
 						<div className='flex gap-x-8 items-center'>
 							<Link to="works" className='text-gradient btn-link'>
-								<button className='btn btn-lg'>My works</button>
+								<button className='btn btn-lg duration-500'>My works</button>
 							</Link>
 						</div>
 					</motion.div>

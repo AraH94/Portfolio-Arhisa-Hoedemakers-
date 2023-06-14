@@ -8,6 +8,7 @@ module.exports = {
 			tertiary: 'Aldrich',
 			space: 'Space Mono, monospace',
 			silkscreen: 'Silkscreen, cursive',
+			titillium: 'Titillium Web, sans-serif',
 		},
 		container: {
 			padding: {

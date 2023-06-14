@@ -66,7 +66,7 @@ function Banner() {
 						className="hidden lg:flex flex-1 max-w-[400px] lg:max-h-[420px] justify-center items-center relative box mt-[50px]">
 						<div className="content pointer-events-none">
 							<img src={Image} alt="" />
-							<h2 className="pb-3">HII THERE! 🙋<br />Want to work together? </h2>
+							<h2 className="pb-3 font-titillium">HII THERE! 🙋<br />Want to work together? </h2>
 							<Link to='contact' activeClass='active' className='pointer-events-auto cursor-pointer'>Hire me</Link>
 						</div>
 					</motion.div>
